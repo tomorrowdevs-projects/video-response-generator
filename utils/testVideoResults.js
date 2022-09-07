@@ -34,6 +34,10 @@ const results = {
         "TRUE": "",
         "FALSE": "",
     },
+    "has_attended_courses": {
+        "TRUE": "",
+        "FALSE": "",
+    },
     "has_projects": {
         "TRUE": "",
         "FALSE": "",
@@ -58,10 +62,30 @@ const results = {
         "FALSE": "",  
     },
     "motivation": {
-        "JOB":"",
-        "FREELANCE":"",
-        "PERSONAL_PROJECT":"",
-        "LEARNING":"",
+        "JOB": {
+            "years" : {
+                "BELOW_35":"",
+                "ABOVE_35": ""
+            }
+        },
+        "FREELANCE": {
+            "years" : {
+                "BELOW_35":"",
+                "ABOVE_35": ""
+            }
+        },
+        "PERSONAL_PROJECT": {
+            "years" : {
+                "BELOW_35":"",
+                "ABOVE_35": ""
+            }
+        },
+        "LEARNING": {
+            "years" : {
+                "BELOW_35":"",
+                "ABOVE_35": ""
+            }
+        },
     },
     "what_is_searching_for": {
         "DIRECT_LESSONS":"",
@@ -87,6 +111,18 @@ const results = {
     "need_degree" : {
         "TRUE": "",
         "FALSE": "", 
+    },
+    "product": {
+        "MENTORSHIP":"",
+        "ZERO_KNOWLEDGE":"",
+        "MEMBERSHIP":"",
+        "LEARNING_PATH":""
+    },
+    "courses_downsides": {
+        "NO_SUPPORT":"",
+        "TOO_FAST":"",
+        "INSUFFICENT_EXPLANATIONS":"",
+        "NOT_FOR_ME":"",
     }
 }
 
