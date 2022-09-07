@@ -1,232 +1,224 @@
 {
-   "event_id":"01GCA3GT51RB81R55EKC7ARDJ0",
-   "event_type":"form_response",
-   "form_response":{
-      "form_id":"BQdTVz0d",
-      "token":"n1vbdu5422miqwgnqlgf3n1vbducpvrz",
-      "landed_at":"2022-09-06T19:12:55Z",
-      "submitted_at":"2022-09-06T19:13:04Z",
-      "calculated":{
-         "score":0
-      },
-      "variables":[
-         {
-            "key":"b2b",
-            "type":"text",
-            "text":"TRUE"
-         },
-         {
-            "key":"biggest_complain",
-            "type":"text",
-            "text":""
-         },
-         {
-            "key":"courses_downsides",
-            "type":"text",
-            "text":""
-         },
-         {
-            "key":"email",
-            "type":"text",
-            "text":""
-         },
-         {
-            "key":"field_complexity",
-            "type":"text",
-            "text":""
-         },
-         {
-            "key":"has_attended_courses",
-            "type":"text",
-            "text":"FALSE"
-         },
-         {
-            "key":"has_projects",
-            "type":"text",
-            "text":"FALSE"
-         },
-         {
-            "key":"is_currently_working",
-            "type":"text",
-            "text":"FALSE"
-         },
-         {
-            "key":"is_developer_already",
-            "type":"text",
-            "text":"TRUE"
-         },
-         {
-            "key":"knows_theory",
-            "type":"text",
-            "text":"FALSE"
-         },
-         {
-            "key":"motivation",
-            "type":"text",
-            "text":""
-         },
-         {
-            "key":"name",
-            "type":"text",
-            "text":""
-         },
-         {
-            "key":"need_basics",
-            "type":"text",
-            "text":""
-         },
-         {
-            "key":"need_degree",
-            "type":"text",
-            "text":"FALSE"
-         },
-         {
-            "key":"need_mentorship",
-            "type":"text",
-            "text":""
-         },
-         {
-            "key":"not_for_td",
-            "type":"text",
-            "text":""
-         },
-         {
-            "key":"product",
-            "type":"text",
-            "text":""
-         },
-         {
-            "key":"score",
-            "type":"number",
-            "number":0
-         },
-         {
-            "key":"surname",
-            "type":"text",
-            "text":""
-         },
-         {
-            "key":"test_failed",
-            "type":"text",
-            "text":""
-         },
-         {
-            "key":"time_available",
-            "type":"text",
-            "text":""
-         },
-         {
-            "key":"time_deadline",
-            "type":"text",
-            "text":""
-         },
-         {
-            "key":"type_of_courses",
-            "type":"text",
-            "text":""
-         },
-         {
-            "key":"type_of_project",
-            "type":"text",
-            "text":""
-         },
-         {
-            "key":"what_is_searching_for",
-            "type":"text",
-            "text":""
-         }
-      ],
-      "definition":{
-         "id":"BQdTVz0d",
-         "title":"Mega Test TD",
-         "fields":[
+    "event_id": "01GCA3GT51RB81R55EKC7ARDJ0",
+    "event_type": "form_response",
+    "form_response": {
+        "form_id": "BQdTVz0d",
+        "token": "n1vbdu5422miqwgnqlgf3n1vbducpvrz",
+        "landed_at": "2022-09-06T19:12:55Z",
+        "submitted_at": "2022-09-06T19:13:04Z",
+        "calculated": {
+            "score": 0
+        },
+        "variables": [
             {
-               "id":"N9PO8KpQkzVO",
-               "ref":"b77d13e2-939f-4fd6-a3a8-6f1745e149a8",
-               "type":"email",
-               "title":"Prima di tutto, qual è il tuo indirizzo email?",
-               "properties":{
-                  
-               }
+                "key": "b2b",
+                "type": "text",
+                "text": "TRUE"
             },
             {
-               "id":"MB8Acw4gUReI",
-               "ref":"a87bcced-df25-447e-9a40-a0b29d071caf",
-               "type":"short_text",
-               "title":"Come ti chiami? (Nome e Cognome)",
-               "properties":{
-                  
-               }
+                "key": "biggest_complain",
+                "type": "text",
+                "text": "FUTURE"
             },
             {
-               "id":"UOJ67umoT2y8",
-               "ref":"18a8343a-dd63-4aa7-97ba-38faf519deb4",
-               "type":"yes_no",
-               "title":"Lavori già come Developer?",
-               "properties":{
-                  
-               }
+                "key": "courses_downsides",
+                "type": "text",
+                "text": ""
             },
             {
-               "id":"Mp4q7UJ5tjsL",
-               "ref":"06c468d8-4132-4548-9bde-6de59063e71c",
-               "type":"multiple_choice",
-               "title":"Intendi formarti come privato o per conto dell'azienda per cui lavori?",
-               "properties":{
-                  
-               },
-               "choices":[
-                  {
-                     "id":"GSMwYJehYLrM",
-                     "label":"Vorrei formarmi come privato"
-                  },
-                  {
-                     "id":"Wpr8LghJU4Zx",
-                     "label":"Vorrei formarmi per conto della mia azienda"
-                  }
-               ]
-            }
-         ]
-      },
-      "answers":[
-         {
-            "type":"email",
-            "email":"simo@fullstackish.io",
-            "field":{
-               "id":"N9PO8KpQkzVO",
-               "type":"email",
-               "ref":"b77d13e2-939f-4fd6-a3a8-6f1745e149a8"
-            }
-         },
-         {
-            "type":"text",
-            "text":"Simone Torrisi",
-            "field":{
-               "id":"MB8Acw4gUReI",
-               "type":"short_text",
-               "ref":"a87bcced-df25-447e-9a40-a0b29d071caf"
-            }
-         },
-         {
-            "type":"boolean",
-            "boolean":true,
-            "field":{
-               "id":"UOJ67umoT2y8",
-               "type":"yes_no",
-               "ref":"18a8343a-dd63-4aa7-97ba-38faf519deb4"
-            }
-         },
-         {
-            "type":"choice",
-            "choice":{
-               "label":"Vorrei formarmi per conto della mia azienda"
+                "key": "email",
+                "type": "text",
+                "text": ""
             },
-            "field":{
-               "id":"Mp4q7UJ5tjsL",
-               "type":"multiple_choice",
-               "ref":"06c468d8-4132-4548-9bde-6de59063e71c"
+            {
+                "key": "field_complexity",
+                "type": "text",
+                "text": ""
+            },
+            {
+                "key": "has_attended_courses",
+                "type": "text",
+                "text": "FALSE"
+            },
+            {
+                "key": "has_projects",
+                "type": "text",
+                "text": "FALSE"
+            },
+            {
+                "key": "is_currently_working",
+                "type": "text",
+                "text": "FALSE"
+            },
+            {
+                "key": "is_developer_already",
+                "type": "text",
+                "text": "TRUE"
+            },
+            {
+                "key": "knows_theory",
+                "type": "text",
+                "text": "FALSE"
+            },
+            {
+                "key": "motivation",
+                "type": "text",
+                "text": ""
+            },
+            {
+                "key": "name",
+                "type": "text",
+                "text": ""
+            },
+            {
+                "key": "need_basics",
+                "type": "text",
+                "text": ""
+            },
+            {
+                "key": "need_degree",
+                "type": "text",
+                "text": "FALSE"
+            },
+            {
+                "key": "need_mentorship",
+                "type": "text",
+                "text": ""
+            },
+            {
+                "key": "not_for_td",
+                "type": "text",
+                "text": ""
+            },
+            {
+                "key": "product",
+                "type": "text",
+                "text": ""
+            },
+            {
+                "key": "score",
+                "type": "number",
+                "number": 0
+            },
+            {
+                "key": "surname",
+                "type": "text",
+                "text": ""
+            },
+            {
+                "key": "test_failed",
+                "type": "text",
+                "text": ""
+            },
+            {
+                "key": "time_available",
+                "type": "text",
+                "text": ""
+            },
+            {
+                "key": "time_deadline",
+                "type": "text",
+                "text": ""
+            },
+            {
+                "key": "type_of_courses",
+                "type": "text",
+                "text": ""
+            },
+            {
+                "key": "type_of_project",
+                "type": "text",
+                "text": ""
+            },
+            {
+                "key": "what_is_searching_for",
+                "type": "text",
+                "text": ""
             }
-         }
-      ]
-   }
+        ],
+        "definition": {
+            "id": "BQdTVz0d",
+            "title": "Mega Test TD",
+            "fields": [
+                {
+                    "id": "N9PO8KpQkzVO",
+                    "ref": "b77d13e2-939f-4fd6-a3a8-6f1745e149a8",
+                    "type": "email",
+                    "title": "Prima di tutto, qual è il tuo indirizzo email?",
+                    "properties": {}
+                },
+                {
+                    "id": "MB8Acw4gUReI",
+                    "ref": "a87bcced-df25-447e-9a40-a0b29d071caf",
+                    "type": "short_text",
+                    "title": "Come ti chiami? (Nome e Cognome)",
+                    "properties": {}
+                },
+                {
+                    "id": "UOJ67umoT2y8",
+                    "ref": "18a8343a-dd63-4aa7-97ba-38faf519deb4",
+                    "type": "yes_no",
+                    "title": "Lavori già come Developer?",
+                    "properties": {}
+                },
+                {
+                    "id": "Mp4q7UJ5tjsL",
+                    "ref": "06c468d8-4132-4548-9bde-6de59063e71c",
+                    "type": "multiple_choice",
+                    "title": "Intendi formarti come privato o per conto dell'azienda per cui lavori?",
+                    "properties": {},
+                    "choices": [
+                        {
+                            "id": "GSMwYJehYLrM",
+                            "label": "Vorrei formarmi come privato"
+                        },
+                        {
+                            "id": "Wpr8LghJU4Zx",
+                            "label": "Vorrei formarmi per conto della mia azienda"
+                        }
+                    ]
+                }
+            ]
+        },
+        "answers": [
+            {
+                "type": "email",
+                "email": "simo@fullstackish.io",
+                "field": {
+                    "id": "N9PO8KpQkzVO",
+                    "type": "email",
+                    "ref": "b77d13e2-939f-4fd6-a3a8-6f1745e149a8"
+                }
+            },
+            {
+                "type": "text",
+                "text": "Simone Torrisi",
+                "field": {
+                    "id": "MB8Acw4gUReI",
+                    "type": "short_text",
+                    "ref": "a87bcced-df25-447e-9a40-a0b29d071caf"
+                }
+            },
+            {
+                "type": "boolean",
+                "boolean": true,
+                "field": {
+                    "id": "UOJ67umoT2y8",
+                    "type": "yes_no",
+                    "ref": "18a8343a-dd63-4aa7-97ba-38faf519deb4"
+                }
+            },
+            {
+                "type": "choice",
+                "choice": {
+                    "label": "Vorrei formarmi per conto della mia azienda"
+                },
+                "field": {
+                    "id": "Mp4q7UJ5tjsL",
+                    "type": "multiple_choice",
+                    "ref": "06c468d8-4132-4548-9bde-6de59063e71c"
+                }
+            }
+        ]
+    }
 }
