@@ -13,7 +13,8 @@ const {
 describe('RAW PARSER TEST', () => {
     it('Should return an object with variable "keys" as keys and variables "text" as values from rawData', () => {
         const rawData = require('../test-results.json');
-        expect(formParser(rawData)).toEqual(expectedDataAfterParser);
+        const variablesArr = rawData.form_response.variables;
+        expect(formParser(variablesArr)).toEqual(expectedDataAfterParser);
     });
 });
 describe('PLAYLIST GENERATOR TEST', () => {

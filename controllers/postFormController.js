@@ -1,12 +1,9 @@
 const rawData = require('../test-results.json');
 const { sequence, results } = require('../utils/testVideoResults');
 
-// this function will return only the array contained in the raw form from typeform
-const formParser = (rawForm) => {
-    // first we get the variables array from the request
-    const variablesArr = rawForm.form_response.variables;
-
-    // then we transform the variables array into a key:value object like this {variable.key: variable.text}
+// this function will return the variables contained in the raw form from typeform as an object
+const formParser = (variablesArr) => {
+    // we transform the variables array into a key:value object like this {variable.key: variable.text}
     const variablesObj = variablesArr.reduce(
         (obj, variable) =>
             Object.assign(
@@ -48,10 +45,12 @@ const playlistGenerator = (parsedData) => {
 // @POST
 // this is the controller that will be called when raw form will be posted to the backend
 const postFormController = (req, res) => {
-    // TODO: we have still to figure if rawData will be sent as a file or as a json and then parse raw data from request
-
+    // at the moment we are getting rawForm from a file, but it will be sent in the request.body
+    const rawForm = req.body?.form ? req.body.form : rawData;
+    // first we get the variables array from the request
+    const variablesArr = rawForm.form_response.variables;
     // parsedData contains an object with variables "keys" as keys and variables "text" as values
-    const parsedData = formParser(rawData);
+    const parsedData = formParser(variablesArr);
     console.log('parsed from rawData: ', parsedData);
 
     const generatedPlaylist = playlistGenerator(parsedData);
