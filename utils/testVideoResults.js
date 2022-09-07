@@ -90,4 +90,23 @@ const results = {
     }
 }
 
-module.exports = results
+const sequence = [  "b2b", 
+                    "is_developer_already", 
+                    "is_currently_working", 
+                    "has_attended_courses", 
+                    "type_of_courses", 
+                    "knows_theory", 
+                    "has_projects", 
+                    "type_of_project",
+                    "need_basics", 
+                    "field_complexity", 
+                    "need_mentorship", 
+                    "motivation", 
+                    "need_degree", 
+                    "biggest_complain", 
+                    "what_is_searching_for", 
+                    "time_available", 
+                    "time_deadline"
+                ]
+
+module.exports = {results, sequence}
