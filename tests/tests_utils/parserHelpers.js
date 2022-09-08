@@ -1,5 +1,6 @@
 const expectedDataAfterParser = {
     b2b: 'TRUE',
+    years: 'BELOW_35',
     biggest_complain: 'FUTURE',
     courses_downsides: '',
     email: '',
@@ -9,7 +10,7 @@ const expectedDataAfterParser = {
     is_currently_working: 'FALSE',
     is_developer_already: 'TRUE',
     knows_theory: 'FALSE',
-    motivation: '',
+    motivation: 'FREELANCE',
     name: '',
     need_basics: '',
     need_degree: 'FALSE',
@@ -32,6 +33,7 @@ expectedPlaylistAfterParsedData = [
     'video23',
     'video21',
     'video25',
+    'video39',
     'video3',
 ];
 

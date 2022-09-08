@@ -128,6 +128,7 @@ const results = {
 
 const sequence = [
     'b2b',
+    'years',
     'is_developer_already',
     'is_currently_working',
     'has_attended_courses',

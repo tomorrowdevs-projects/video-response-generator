@@ -16,6 +16,11 @@
                 "text": "TRUE"
             },
             {
+                "key": "years",
+                "type": "text",
+                "text": "BELOW_35"
+            },
+            {
                 "key": "biggest_complain",
                 "type": "text",
                 "text": "FUTURE"
@@ -63,7 +68,7 @@
             {
                 "key": "motivation",
                 "type": "text",
-                "text": ""
+                "text": "FREELANCE"
             },
             {
                 "key": "name",
