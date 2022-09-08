@@ -1,0 +1,967 @@
+{
+   "event_id":"01GCE86XVK78MEB3CDE556E2SX",
+   "event_type":"form_response",
+   "form_response":{
+      "form_id":"BQdTVz0d",
+      "token":"p2op7cmvrcds0u1mn11p2op7mo5anvci",
+      "landed_at":"2022-09-08T09:50:19Z",
+      "submitted_at":"2022-09-08T09:52:01Z",
+      "calculated":{
+         "score":50
+      },
+      "variables":[
+         {
+            "key":"b2b",
+            "type":"text",
+            "text":"FALSE"
+         },
+         {
+            "key":"biggest_complain",
+            "type":"text",
+            "text":"FUTURE"
+         },
+         {
+            "key":"courses_downsides",
+            "type":"text",
+            "text":""
+         },
+         {
+            "key":"email",
+            "type":"text",
+            "text":""
+         },
+         {
+            "key":"field_complexity",
+            "type":"text",
+            "text":""
+         },
+         {
+            "key":"has_attended_courses",
+            "type":"text",
+            "text":"FALSE"
+         },
+         {
+            "key":"has_projects",
+            "type":"text",
+            "text":"FALSE"
+         },
+         {
+            "key":"is_currently_working",
+            "type":"text",
+            "text":"FALSE"
+         },
+         {
+            "key":"is_developer_already",
+            "type":"text",
+            "text":"FALSE"
+         },
+         {
+            "key":"knows_theory",
+            "type":"text",
+            "text":"FALSE"
+         },
+         {
+            "key":"motivation",
+            "type":"text",
+            "text":"JOB"
+         },
+         {
+            "key":"name",
+            "type":"text",
+            "text":""
+         },
+         {
+            "key":"need_basics",
+            "type":"text",
+            "text":""
+         },
+         {
+            "key":"need_degree",
+            "type":"text",
+            "text":"TRUE"
+         },
+         {
+            "key":"need_mentorship",
+            "type":"text",
+            "text":"TRUE"
+         },
+         {
+            "key":"not_for_td",
+            "type":"text",
+            "text":""
+         },
+         {
+            "key":"product",
+            "type":"text",
+            "text":""
+         },
+         {
+            "key":"score",
+            "type":"number",
+            "number":50
+         },
+         {
+            "key":"surname",
+            "type":"text",
+            "text":""
+         },
+         {
+            "key":"test_failed",
+            "type":"text",
+            "text":""
+         },
+         {
+            "key":"time_available",
+            "type":"text",
+            "text":"TOO_LOW"
+         },
+         {
+            "key":"time_deadline",
+            "type":"text",
+            "text":"1_3_MONTHS"
+         },
+         {
+            "key":"type_of_courses",
+            "type":"text",
+            "text":""
+         },
+         {
+            "key":"type_of_project",
+            "type":"text",
+            "text":""
+         },
+         {
+            "key":"what_is_searching_for",
+            "type":"text",
+            "text":"CERTIFICATION"
+         },
+         {
+            "key":"years",
+            "type":"text",
+            "text":"ABOVE_35"
+         }
+      ],
+      "definition":{
+         "id":"BQdTVz0d",
+         "title":"Mega Test TD",
+         "fields":[
+            {
+               "id":"N9PO8KpQkzVO",
+               "ref":"b77d13e2-939f-4fd6-a3a8-6f1745e149a8",
+               "type":"email",
+               "title":"Prima di tutto, qual è il tuo indirizzo email?",
+               "properties":{
+                  
+               }
+            },
+            {
+               "id":"MB8Acw4gUReI",
+               "ref":"a87bcced-df25-447e-9a40-a0b29d071caf",
+               "type":"short_text",
+               "title":"Come ti chiami? (Nome e Cognome)",
+               "properties":{
+                  
+               }
+            },
+            {
+               "id":"UOJ67umoT2y8",
+               "ref":"18a8343a-dd63-4aa7-97ba-38faf519deb4",
+               "type":"yes_no",
+               "title":"Lavori già come Developer?",
+               "properties":{
+                  
+               }
+            },
+            {
+               "id":"xlTewgZ7fFEp",
+               "ref":"f4a7fbcc-5be1-4344-8281-3cfb2da39576",
+               "type":"number",
+               "title":"Quanti anni hai?",
+               "properties":{
+                  
+               }
+            },
+            {
+               "id":"AjTZl7ExhzmG",
+               "ref":"90268599-94c4-4153-887d-6281851756a0",
+               "type":"yes_no",
+               "title":"In questo momento, hai un lavoro?",
+               "properties":{
+                  
+               }
+            },
+            {
+               "id":"Q1mN1wfwiG9Y",
+               "ref":"ab24f3f8-a8c7-4792-8cc8-7ccd23a338cd",
+               "type":"yes_no",
+               "title":"Hai mai fruito di altri corsi?",
+               "properties":{
+                  
+               }
+            },
+            {
+               "id":"61zq622hi1QH",
+               "ref":"e6ef575d-3887-4996-bca8-172ffbf5369a",
+               "type":"yes_no",
+               "title":"Hai una conoscenza, seppur minima, della teoria dietro la programmazione?",
+               "properties":{
+                  
+               }
+            },
+            {
+               "id":"agCBBj95askI",
+               "ref":"a26d9b1c-2c08-442c-b536-4e93250fb5d8",
+               "type":"yes_no",
+               "title":"Hai mai realizzato qualche piccolo algoritmo e/o progetto?",
+               "properties":{
+                  
+               }
+            },
+            {
+               "id":"GCA6B79jgJyW",
+               "ref":"abeba73c-7345-4733-af54-2dc5cfa996cc",
+               "type":"multiple_choice",
+               "title":"In che ambito vorresti specializzarti?",
+               "properties":{
+                  
+               },
+               "allow_other_choice":true,
+               "choices":[
+                  {
+                     "id":"B7OgrTBsBpXM",
+                     "label":"Web - Frontend"
+                  },
+                  {
+                     "id":"qtGITQOZpimo",
+                     "label":"Web - Backend"
+                  },
+                  {
+                     "id":"S0ShdTecIZ3e",
+                     "label":"Fullstack Developer"
+                  },
+                  {
+                     "id":"H2GlV6tXqL0y",
+                     "label":"Sviluppo Software"
+                  },
+                  {
+                     "id":"B8Lzs49hkiJQ",
+                     "label":"Intelligenza Artificiale / Machine Learning / Data Science"
+                  },
+                  {
+                     "id":"ZXjewmuHX9hG",
+                     "label":"Blockchain"
+                  },
+                  {
+                     "id":"tlvmk5g5jDEs",
+                     "label":"Cybersecurity"
+                  },
+                  {
+                     "id":"8p9ZPR47kITn",
+                     "label":"Mi piacciono molti ambiti / Sono confuso"
+                  },
+                  {
+                     "id":"Wre8cvdS0Uff",
+                     "label":"Non ho gli strumenti per prendere una decisione"
+                  }
+               ]
+            },
+            {
+               "id":"7rh9BfLJkozf",
+               "ref":"d46e1bc8-7b7d-45f2-962c-9e4f3eda8a87",
+               "type":"multiple_choice",
+               "title":"Facciamo ora un piccolo test tecnico per appurare le tue conoscenze.\n\nAnalizza questo pseudocodice, dopodichè indica quale, secondo te, è il risultato: ",
+               "properties":{
+                  
+               },
+               "choices":[
+                  {
+                     "id":"9s0SpgWJXZ5g",
+                     "label":"4321"
+                  },
+                  {
+                     "id":"jus6xUGOGKA0",
+                     "label":"10"
+                  },
+                  {
+                     "id":"wQMSeIGmZFOf",
+                     "label":"0"
+                  },
+                  {
+                     "id":"TVUQtss2DgO8",
+                     "label":"1234"
+                  }
+               ]
+            },
+            {
+               "id":"qgCUjxmRcyef",
+               "ref":"b6d223a4-f981-4185-b99d-cb66b99d5b0a",
+               "type":"multiple_choice",
+               "title":"Analizza questo pseudocodice, quale è secondo te il suo risultato?",
+               "properties":{
+                  
+               },
+               "choices":[
+                  {
+                     "id":"9fY1J0idod3e",
+                     "label":"2468"
+                  },
+                  {
+                     "id":"muO9tz6V55ET",
+                     "label":"20"
+                  },
+                  {
+                     "id":"Kk8A7CyHzC2o",
+                     "label":"12"
+                  },
+                  {
+                     "id":"ZuLKPJmZ0U7a",
+                     "label":"246"
+                  },
+                  {
+                     "id":"6DZOyZCP0Hws",
+                     "label":"Non so cosa rappresenta FOR"
+                  }
+               ]
+            },
+            {
+               "id":"0QcF2wsPENYj",
+               "ref":"fa7dd902-9bea-45ce-820a-3a8d90a1f494",
+               "type":"multiple_choice",
+               "title":"Qual è il risultato di questo pseudocodice?",
+               "properties":{
+                  
+               },
+               "choices":[
+                  {
+                     "id":"hz5n9WjgHXSf",
+                     "label":"2118"
+                  },
+                  {
+                     "id":"YXqqSgp6MMME",
+                     "label":"39"
+                  },
+                  {
+                     "id":"teY0ZVwaQLm8",
+                     "label":"4"
+                  },
+                  {
+                     "id":"mxeFJMY8bpOb",
+                     "label":"2018"
+                  }
+               ]
+            },
+            {
+               "id":"jsPgB9hkDwqA",
+               "ref":"9eb703e9-1145-4c70-8f5f-23531c5c412f",
+               "type":"multiple_choice",
+               "title":"Qual è il risultato di questo pseudocodice?",
+               "properties":{
+                  
+               },
+               "choices":[
+                  {
+                     "id":"5gLfZuPQUTrh",
+                     "label":"5257"
+                  },
+                  {
+                     "id":"BRjtbIxa27go",
+                     "label":"25"
+                  },
+                  {
+                     "id":"AqcvxtWRlKRq",
+                     "label":"7947"
+                  },
+                  {
+                     "id":"LLLpEYCdkBbE",
+                     "label":"19"
+                  }
+               ]
+            },
+            {
+               "id":"4xS74phH0dFz",
+               "ref":"880f1bf3-1cf9-40c4-a979-a273a6491220",
+               "type":"multiple_choice",
+               "title":"Qual è il risultato di questo pseudocodice?",
+               "properties":{
+                  
+               },
+               "choices":[
+                  {
+                     "id":"5IkiPPwen3Sj",
+                     "label":"4721"
+                  },
+                  {
+                     "id":"hcnLfUqH2stt",
+                     "label":"81"
+                  },
+                  {
+                     "id":"mZAknLAdsdA4",
+                     "label":"472149"
+                  },
+                  {
+                     "id":"8pY9FMo91IJ0",
+                     "label":"36713"
+                  },
+                  {
+                     "id":"WLNPi1yXdQqa",
+                     "label":"0"
+                  },
+                  {
+                     "id":"nouTFIzpx8Qf",
+                     "label":"Non so dire cosa rappresenta lotteryNumbers"
+                  }
+               ]
+            },
+            {
+               "id":"tNhdqIVqRzZf",
+               "ref":"ff592720-0d12-4eb5-bab8-c0bf4ee53fcd",
+               "type":"multiple_choice",
+               "title":"Qual è il risultato di questo pseudocodice?",
+               "properties":{
+                  
+               },
+               "choices":[
+                  {
+                     "id":"rFmhRK9ZCE1z",
+                     "label":"5151"
+                  },
+                  {
+                     "id":"jd7zJ3x1kT8h",
+                     "label":"4854"
+                  },
+                  {
+                     "id":"174II9MtDkDU",
+                     "label":"12"
+                  },
+                  {
+                     "id":"JmR0jHWGiWCt",
+                     "label":"Non so"
+                  }
+               ]
+            },
+            {
+               "id":"nBcG6ihiL5dt",
+               "ref":"7e034643-6dd9-4b98-94c4-3d5658740e3d",
+               "type":"multiple_choice",
+               "title":"Qual è il risultato di questo pseudocodice?",
+               "properties":{
+                  
+               },
+               "choices":[
+                  {
+                     "id":"rqrXnELK7cNg",
+                     "label":"1500"
+                  },
+                  {
+                     "id":"F1mL1Z4uwmaT",
+                     "label":"1000"
+                  },
+                  {
+                     "id":"e3ueVGofOFo3",
+                     "label":"6"
+                  },
+                  {
+                     "id":"PRAeU2TnX51w",
+                     "label":"11"
+                  },
+                  {
+                     "id":"65lXBjiROw74",
+                     "label":"Non so"
+                  }
+               ]
+            },
+            {
+               "id":"6cwPU1fxED4z",
+               "ref":"b4dc5767-395e-4e89-a30e-9554b8f594eb",
+               "type":"multiple_choice",
+               "title":"Hai un array di numeri che vanno da 1 a 100, ma manca un elemento. Come lo trovi?",
+               "properties":{
+                  
+               },
+               "choices":[
+                  {
+                     "id":"3JxWrsBXosfk",
+                     "label":"Eseguo la somma dell'array completo dei numeri da 1 a 100, e lo confronto con la somma dell'array in mio possesso. La differenza sarà il numero mancante."
+                  },
+                  {
+                     "id":"VYRMEKlQmwLJ",
+                     "label":"Effettuo un loop su ogni elemento dell'array in mio possesso e lo confronto con un array completo di numeri da 1 a 100, se un numero non corrisponde, sarà quello mancante."
+                  },
+                  {
+                     "id":"tvFmcTD4W73u",
+                     "label":"Effettuo un loop sull'array, se il numero successivo non è uguale al numero precedente + 1, allora è il numero mancante."
+                  },
+                  {
+                     "id":"rW3omrt7swQH",
+                     "label":"Non so cos'è un array"
+                  }
+               ]
+            },
+            {
+               "id":"ckIlPC78VpNu",
+               "ref":"a8224646-ef4b-4e48-8987-8f0bb83e319f",
+               "type":"multiple_choice",
+               "title":"Conosci Git?",
+               "properties":{
+                  
+               },
+               "choices":[
+                  {
+                     "id":"2liM6c9LMx3a",
+                     "label":"Si, lo uso continuamente"
+                  },
+                  {
+                     "id":"pFpXsP64dHMd",
+                     "label":"No"
+                  },
+                  {
+                     "id":"3ZuZjvRYn2ba",
+                     "label":"Lo conosco ma non l'ho mai usato in modo approfondito"
+                  }
+               ]
+            },
+            {
+               "id":"1VVQSzspEZbO",
+               "ref":"ebde19ff-008f-4297-9d55-bfe4dc95a589",
+               "type":"multiple_choice",
+               "title":"Quali motivi ti spingono a formarti?",
+               "properties":{
+                  
+               },
+               "choices":[
+                  {
+                     "id":"O1tMs2AtvByp",
+                     "label":"Vorrei trovare lavoro come dipendente"
+                  },
+                  {
+                     "id":"Po52NpBKJmST",
+                     "label":"Vorrei diventare Freelance"
+                  },
+                  {
+                     "id":"3voxd0CB0pqZ",
+                     "label":"Ho un progetto personale che vorrei realizzare"
+                  },
+                  {
+                     "id":"ALEKDWMBve3g",
+                     "label":"Mi interessa semplicemente la formazione"
+                  }
+               ]
+            },
+            {
+               "id":"px03nHOtyl2I",
+               "ref":"80d8a75e-5019-4b98-a06d-c142dcf6267b",
+               "type":"multiple_choice",
+               "title":"Qual è la tua maggiore preoccupazione al momento?",
+               "properties":{
+                  
+               },
+               "allow_other_choice":true,
+               "choices":[
+                  {
+                     "id":"8sP6G1JBAH9J",
+                     "label":"Non so cosa voglio fare in futuro"
+                  },
+                  {
+                     "id":"VJbM4Iujn5kQ",
+                     "label":"Non riesco a capire quale formazione può essere più adatta a me"
+                  },
+                  {
+                     "id":"JjqsbYYu6R2w",
+                     "label":"Sono troppo vecchio per frequentare l'Università"
+                  },
+                  {
+                     "id":"9Kcua4qyaX9p",
+                     "label":"Vorrei trovare lavoro velocemente"
+                  },
+                  {
+                     "id":"oJtDYIn4wwIE",
+                     "label":"Non sono convinto dai Bootcamp"
+                  },
+                  {
+                     "id":"9VIJRXEpt2ft",
+                     "label":"Vorrei fare un corso ma non so quale, ce ne sono tanti"
+                  },
+                  {
+                     "id":"vH4s4sDU78k4",
+                     "label":"Studio tanto, ma non so mettere in pratica"
+                  },
+                  {
+                     "id":"zKbqPsLL1BKY",
+                     "label":"Non voglio spendere 4 o 5mila Euro per un corso"
+                  }
+               ]
+            },
+            {
+               "id":"snmWq6uCQYTE",
+               "ref":"cb86eff2-e8f8-4806-8a6b-a497c721d0e7",
+               "type":"multiple_choice",
+               "title":"Cosa stai cercando in questo momento?",
+               "properties":{
+                  
+               },
+               "choices":[
+                  {
+                     "id":"ubK7QfzPMUJY",
+                     "label":"Una formazione classica con un docente"
+                  },
+                  {
+                     "id":"afI5YHgJMVmx",
+                     "label":"Un videocorso da seguire"
+                  },
+                  {
+                     "id":"fvz9HbaGTY9y",
+                     "label":"Lezioni da seguire giornalmente"
+                  },
+                  {
+                     "id":"KjbjHBkVv8RH",
+                     "label":"Un supporto durante la pratica fatta in autonomia"
+                  },
+                  {
+                     "id":"UkuF21Z2O9mm",
+                     "label":"Un confronto con persone esperte"
+                  },
+                  {
+                     "id":"HN2errGgK6ZA",
+                     "label":"Progetti da realizzare per arricchire il portfolio"
+                  },
+                  {
+                     "id":"34fMPCoUxq1Q",
+                     "label":"Voglio capire se la programmazione fa per me"
+                  },
+                  {
+                     "id":"WQj7jBsGZLqZ",
+                     "label":"Lavorare a progetti in team"
+                  },
+                  {
+                     "id":"AujfICRP25so",
+                     "label":"Un percorso che mi garantisca opportunità lavorative"
+                  },
+                  {
+                     "id":"n96AplEIbGQS",
+                     "label":"Un percorso che mi faccia ottenere una certificazione"
+                  },
+                  {
+                     "id":"IYPVUGEHQOQ5",
+                     "label":"Un corso che mi permetta di apprendere il metodo di lavoro"
+                  },
+                  {
+                     "id":"V8iJuewsCJ6s",
+                     "label":"Imparare un linguaggio specifico (Python, Java, Javascript, C#, ecc)"
+                  }
+               ]
+            },
+            {
+               "id":"WIpduErDIooq",
+               "ref":"b06e7d7b-6d00-481d-8bc8-8e87c71f09ad",
+               "type":"multiple_choice",
+               "title":"Quanto tempo pensi di poter dedicare alla formazione?",
+               "properties":{
+                  
+               },
+               "choices":[
+                  {
+                     "id":"JJkV702GSU2q",
+                     "label":"Prevalentemente i weekend"
+                  },
+                  {
+                     "id":"M3LMmlFHy9qG",
+                     "label":"1 o 2 ore al giorno"
+                  },
+                  {
+                     "id":"nnOxKVPdJa8w",
+                     "label":"Dalle 3 alle 5 ore al giorno"
+                  },
+                  {
+                     "id":"pg4zvM6jyTek",
+                     "label":"Tutto il giorno"
+                  }
+               ]
+            },
+            {
+               "id":"EPudFbsBdgx8",
+               "ref":"bba2f651-437d-4596-80f6-63e63db8caff",
+               "type":"multiple_choice",
+               "title":"Che orizzonte temporale hai?",
+               "properties":{
+                  
+               },
+               "choices":[
+                  {
+                     "id":"wRmFLs7Xsggn",
+                     "label":"1 / 3 mesi"
+                  },
+                  {
+                     "id":"wSawyla1pn6I",
+                     "label":"3 / 6 mesi"
+                  },
+                  {
+                     "id":"49lZEZvswWdE",
+                     "label":"6 mesi / 1 anno"
+                  },
+                  {
+                     "id":"ugaoecats9iL",
+                     "label":"Oltre 1 anno se necessario"
+                  }
+               ]
+            },
+            {
+               "id":"x6S3kI9gXeyd",
+               "ref":"d40e032a-fd93-4bef-8669-f7709f9c2dbc",
+               "type":"yes_no",
+               "title":"Pensi che avere una Laurea sia fondamentale per lavorare in questo ambito?",
+               "properties":{
+                  
+               }
+            }
+         ]
+      },
+      "answers":[
+         {
+            "type":"email",
+            "email":"simo@fullstackish.io",
+            "field":{
+               "id":"N9PO8KpQkzVO",
+               "type":"email",
+               "ref":"b77d13e2-939f-4fd6-a3a8-6f1745e149a8"
+            }
+         },
+         {
+            "type":"text",
+            "text":"Simone",
+            "field":{
+               "id":"MB8Acw4gUReI",
+               "type":"short_text",
+               "ref":"a87bcced-df25-447e-9a40-a0b29d071caf"
+            }
+         },
+         {
+            "type":"boolean",
+            "boolean":false,
+            "field":{
+               "id":"UOJ67umoT2y8",
+               "type":"yes_no",
+               "ref":"18a8343a-dd63-4aa7-97ba-38faf519deb4"
+            }
+         },
+         {
+            "type":"number",
+            "number":36,
+            "field":{
+               "id":"xlTewgZ7fFEp",
+               "type":"number",
+               "ref":"f4a7fbcc-5be1-4344-8281-3cfb2da39576"
+            }
+         },
+         {
+            "type":"boolean",
+            "boolean":false,
+            "field":{
+               "id":"AjTZl7ExhzmG",
+               "type":"yes_no",
+               "ref":"90268599-94c4-4153-887d-6281851756a0"
+            }
+         },
+         {
+            "type":"boolean",
+            "boolean":false,
+            "field":{
+               "id":"Q1mN1wfwiG9Y",
+               "type":"yes_no",
+               "ref":"ab24f3f8-a8c7-4792-8cc8-7ccd23a338cd"
+            }
+         },
+         {
+            "type":"boolean",
+            "boolean":false,
+            "field":{
+               "id":"61zq622hi1QH",
+               "type":"yes_no",
+               "ref":"e6ef575d-3887-4996-bca8-172ffbf5369a"
+            }
+         },
+         {
+            "type":"boolean",
+            "boolean":false,
+            "field":{
+               "id":"agCBBj95askI",
+               "type":"yes_no",
+               "ref":"a26d9b1c-2c08-442c-b536-4e93250fb5d8"
+            }
+         },
+         {
+            "type":"choice",
+            "choice":{
+               "label":"Mi piacciono molti ambiti / Sono confuso"
+            },
+            "field":{
+               "id":"GCA6B79jgJyW",
+               "type":"multiple_choice",
+               "ref":"abeba73c-7345-4733-af54-2dc5cfa996cc"
+            }
+         },
+         {
+            "type":"choice",
+            "choice":{
+               "label":"4321"
+            },
+            "field":{
+               "id":"7rh9BfLJkozf",
+               "type":"multiple_choice",
+               "ref":"d46e1bc8-7b7d-45f2-962c-9e4f3eda8a87"
+            }
+         },
+         {
+            "type":"choice",
+            "choice":{
+               "label":"2468"
+            },
+            "field":{
+               "id":"qgCUjxmRcyef",
+               "type":"multiple_choice",
+               "ref":"b6d223a4-f981-4185-b99d-cb66b99d5b0a"
+            }
+         },
+         {
+            "type":"choice",
+            "choice":{
+               "label":"2118"
+            },
+            "field":{
+               "id":"0QcF2wsPENYj",
+               "type":"multiple_choice",
+               "ref":"fa7dd902-9bea-45ce-820a-3a8d90a1f494"
+            }
+         },
+         {
+            "type":"choice",
+            "choice":{
+               "label":"5257"
+            },
+            "field":{
+               "id":"jsPgB9hkDwqA",
+               "type":"multiple_choice",
+               "ref":"9eb703e9-1145-4c70-8f5f-23531c5c412f"
+            }
+         },
+         {
+            "type":"choice",
+            "choice":{
+               "label":"Non so dire cosa rappresenta lotteryNumbers"
+            },
+            "field":{
+               "id":"4xS74phH0dFz",
+               "type":"multiple_choice",
+               "ref":"880f1bf3-1cf9-40c4-a979-a273a6491220"
+            }
+         },
+         {
+            "type":"choice",
+            "choice":{
+               "label":"Non so"
+            },
+            "field":{
+               "id":"tNhdqIVqRzZf",
+               "type":"multiple_choice",
+               "ref":"ff592720-0d12-4eb5-bab8-c0bf4ee53fcd"
+            }
+         },
+         {
+            "type":"choice",
+            "choice":{
+               "label":"Non so"
+            },
+            "field":{
+               "id":"nBcG6ihiL5dt",
+               "type":"multiple_choice",
+               "ref":"7e034643-6dd9-4b98-94c4-3d5658740e3d"
+            }
+         },
+         {
+            "type":"choice",
+            "choice":{
+               "label":"Eseguo la somma dell'array completo dei numeri da 1 a 100, e lo confronto con la somma dell'array in mio possesso. La differenza sarà il numero mancante."
+            },
+            "field":{
+               "id":"6cwPU1fxED4z",
+               "type":"multiple_choice",
+               "ref":"b4dc5767-395e-4e89-a30e-9554b8f594eb"
+            }
+         },
+         {
+            "type":"choice",
+            "choice":{
+               "label":"No"
+            },
+            "field":{
+               "id":"ckIlPC78VpNu",
+               "type":"multiple_choice",
+               "ref":"a8224646-ef4b-4e48-8987-8f0bb83e319f"
+            }
+         },
+         {
+            "type":"choice",
+            "choice":{
+               "label":"Vorrei trovare lavoro come dipendente"
+            },
+            "field":{
+               "id":"1VVQSzspEZbO",
+               "type":"multiple_choice",
+               "ref":"ebde19ff-008f-4297-9d55-bfe4dc95a589"
+            }
+         },
+         {
+            "type":"choice",
+            "choice":{
+               "label":"Non so cosa voglio fare in futuro"
+            },
+            "field":{
+               "id":"px03nHOtyl2I",
+               "type":"multiple_choice",
+               "ref":"80d8a75e-5019-4b98-a06d-c142dcf6267b"
+            }
+         },
+         {
+            "type":"choice",
+            "choice":{
+               "label":"Un percorso che mi faccia ottenere una certificazione"
+            },
+            "field":{
+               "id":"snmWq6uCQYTE",
+               "type":"multiple_choice",
+               "ref":"cb86eff2-e8f8-4806-8a6b-a497c721d0e7"
+            }
+         },
+         {
+            "type":"choice",
+            "choice":{
+               "label":"Prevalentemente i weekend"
+            },
+            "field":{
+               "id":"WIpduErDIooq",
+               "type":"multiple_choice",
+               "ref":"b06e7d7b-6d00-481d-8bc8-8e87c71f09ad"
+            }
+         },
+         {
+            "type":"choice",
+            "choice":{
+               "label":"1 / 3 mesi"
+            },
+            "field":{
+               "id":"EPudFbsBdgx8",
+               "type":"multiple_choice",
+               "ref":"bba2f651-437d-4596-80f6-63e63db8caff"
+            }
+         },
+         {
+            "type":"boolean",
+            "boolean":true,
+            "field":{
+               "id":"x6S3kI9gXeyd",
+               "type":"yes_no",
+               "ref":"d40e032a-fd93-4bef-8669-f7709f9c2dbc"
+            }
+         }
+      ]
+   }
+}
