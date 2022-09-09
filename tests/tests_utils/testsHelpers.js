@@ -1,3 +1,5 @@
+// RAW PARSER HELPER
+//
 const expectedDataAfterParser = {
     b2b: 'TRUE',
     years: 'BELOW_35',
@@ -25,8 +27,9 @@ const expectedDataAfterParser = {
     type_of_project: '',
     what_is_searching_for: '',
 };
-
-expectedPlaylistAfterParsedData = [
+// PLAYLIST GENERATOR HELPERS
+//
+const expectedPlaylistAfterGenerator = [
     'video1',
     'video13',
     'video16',
@@ -37,4 +40,33 @@ expectedPlaylistAfterParsedData = [
     'video3',
 ];
 
-module.exports = { expectedDataAfterParser, expectedPlaylistAfterParsedData };
+// RECURSIVE PARSER HELPERS
+//
+const fakeParsedDataForRecursive = {
+    years: 'BELOW_35',
+    need_degree: 'TRUE',
+    is_developer_already: 'TRUE',
+};
+const fakeNestedObject = {
+    years: {
+        BELOW_35: {
+            need_degree: {
+                TRUE: {
+                    is_developer_already: {
+                        TRUE: 'correct_video',
+                        FALSE: '',
+                    },
+                },
+                FALSE: '',
+            },
+        },
+        ABOVE_35: '',
+    },
+};
+
+module.exports = {
+    expectedDataAfterParser,
+    expectedPlaylistAfterGenerator,
+    fakeNestedObject,
+    fakeParsedDataForRecursive,
+};

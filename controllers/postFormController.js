@@ -1,6 +1,29 @@
 const rawData = require('../test-results.json');
 const { sequence, results } = require('../utils/testVideoResults');
 
+// this is the function that in nested objects searches for resulting video
+const recursiveParser = (originalObj, parsedData) => {
+    // first we save the inner level name in innerElement variable
+    const innerElement = Object.keys(originalObj)[0];
+    // console.log('Inner Element in nested obj: ', innerElement);
+    // then we search wich direction we have to go by searching for user response for the inner level question in the parsedData obj
+    const userRespForInnerEl = parsedData[innerElement];
+    // console.log('User response for', innerElement, ' is: ', userRespForInnerEl);
+    // now we have to access the nested level using the userRespForInnerEl
+    // if the nested level is a string we have found the video
+    // else we continue going inside the nested obj with recursion
+    if (typeof originalObj[innerElement][userRespForInnerEl] === 'string') {
+        // if we found a string we have arrived to the last level of the nested object, in the string it is stored the video number/link so we can return it and it will be added to the playlist
+        return originalObj[innerElement][userRespForInnerEl];
+    } else {
+        // if it's not a string we aren't arrived to the last level of the nested object so we continue with recursion
+        return recursiveParser(
+            originalObj[innerElement][userRespForInnerEl],
+            parsedData
+        );
+    }
+};
+
 // this function will return the variables contained in the raw form from typeform as an object
 const formParser = (variablesArr) => {
     // we transform the variables array into a key:value object like this {variable.key: variable.text}
@@ -37,15 +60,16 @@ const playlistGenerator = (parsedData) => {
             let elementVideo = null;
 
             // at this point we try to get the corresponding video, defined in the results array, for the variable value. We assume that variableValue will always have a value associated in the results object otherwise we will catch the error when try to accessing the value
-            try {
+            if (results[element]) {
                 elementVideo = results[element][variableValue];
-            } catch (err) {
+            } else {
                 // if we don't find a corresponding element in the results array we add the sequence element in the missingElementsInResults array
                 console.log(
                     `Missing corresponding video in results object for ${element}: ${parsedData[element]}`
                 );
                 missingElementsInResults.push(parsedData[element]);
             }
+
             // if elementVideo is a string we know it isn't a nested element so we can push the
             // corresponding video number to the playlist
             if (elementVideo && typeof elementVideo === 'string') {
@@ -56,28 +80,16 @@ const playlistGenerator = (parsedData) => {
             // and we try to find the corresponding value in parsedData
             else if (elementVideo && typeof elementVideo === 'object') {
                 console.log('Finded nested object: ', elementVideo);
-                // first we iterate over the parsedData object
-                for (const key in parsedData) {
-                    // if we find the corresponding key in parsedData we have a match with the elementVideo object
-                    if (key === Object.keys(elementVideo)[0]) {
-                        console.log(
-                            `Match found for nested object in parsedData for ${key}:${parsedData[key]}`
-                        );
-                        // parsedValue has the value of the key that matches in parsedData
-                        const parsedValue = parsedData[key];
-                        // now if parsedValue is not an empty string we can access at the corresponding video in the results object
-                        const resultingVideo = elementVideo[key][parsedValue];
-                        if (parsedValue && resultingVideo) {
-                            // after we have checked that resultingVideo has a value we push it to the playlist
-                            playlist.push(resultingVideo);
-                            sampleLog.push(`${element} ==>  ${resultingVideo}`);
-                        }
-                    }
-                }
+                const nestedResultingVideo = recursiveParser(
+                    elementVideo,
+                    parsedData
+                );
+                playlist.push(nestedResultingVideo);
+                sampleLog.push(`${element} ==>  ${nestedResultingVideo}`);
             }
         }
     }
-    console.log('sample Log with corresponding video:', sampleLog);
+    // console.log('sample Log with corresponding video:', sampleLog);
     return playlist;
 };
 
@@ -90,7 +102,7 @@ const postFormController = (req, res) => {
     const variablesArr = rawForm.form_response.variables;
     // parsedData contains an object with variables "keys" as keys and variables "text" as values
     const parsedData = formParser(variablesArr);
-    console.log('parsed from rawData: ', parsedData);
+    // console.log('parsed from rawData: ', parsedData);
 
     const generatedPlaylist = playlistGenerator(parsedData);
     // console.log('Video playlist: ', generatedPlaylist);
@@ -98,4 +110,9 @@ const postFormController = (req, res) => {
     return res.json(generatedPlaylist);
 };
 
-module.exports = { postFormController, formParser, playlistGenerator };
+module.exports = {
+    postFormController,
+    formParser,
+    playlistGenerator,
+    recursiveParser,
+};

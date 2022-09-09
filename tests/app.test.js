@@ -1,13 +1,19 @@
 const request = require('supertest');
-const app = require('../server');
+const app = require('../app');
+// FUNCTIONS TO TEST
 const {
     formParser,
     playlistGenerator,
+    recursiveParser,
 } = require('../controllers/postFormController');
+
+// TEST HELPERS
 const {
     expectedDataAfterParser,
-    expectedPlaylistAfterParsedData,
-} = require('./tests_utils/parserHelpers');
+    expectedPlaylistAfterGenerator,
+    fakeNestedObject,
+    fakeParsedDataForRecursive,
+} = require('./tests_utils/testsHelpers');
 
 // Unit tests for parsing raw data and generating playlist
 describe('RAW PARSER TEST', () => {
@@ -18,11 +24,19 @@ describe('RAW PARSER TEST', () => {
     });
 });
 describe('PLAYLIST GENERATOR TEST', () => {
-    it('Should return an array with videos names referring to the results array located in utils/testVideoResults.js', () => {
+    it('Should return an array aka playlist with videos names referring to the results array', () => {
         const parsedData = expectedDataAfterParser;
         expect(playlistGenerator(parsedData)).toEqual(
-            expectedPlaylistAfterParsedData
+            expectedPlaylistAfterGenerator
         );
+    });
+});
+describe('RECURSIVE PARSER TEST', () => {
+    it('Should return a string with video name', () => {
+        const parsedData = expectedDataAfterParser;
+        expect(
+            recursiveParser(fakeNestedObject, fakeParsedDataForRecursive)
+        ).toEqual('correct_video');
     });
 });
 
@@ -30,6 +44,6 @@ describe('PLAYLIST GENERATOR TEST', () => {
 describe('POST ENDPOINT INTEGRATION TEST', () => {
     it('Should return a json with the final playlist of videos', async () => {
         const response = await request(app).post('/').send();
-        expect(response.body).toEqual(expectedPlaylistAfterParsedData);
+        expect(response.body).toEqual(expectedPlaylistAfterGenerator);
     });
 });
